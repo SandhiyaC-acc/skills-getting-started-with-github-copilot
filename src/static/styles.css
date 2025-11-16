@@ -88,13 +88,36 @@ section h3 {
 }
 
 .participants-list {
-  margin-left: 20px;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none; /* hide bullets */
   font-size: 14px;
   color: #555;
 }
 
 .participants-list li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.unregister-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 .no-participants {
